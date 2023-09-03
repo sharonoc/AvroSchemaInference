@@ -1,0 +1,113 @@
+[
+  [
+    {
+      "tenant": "schema",
+      "namespace": "graveyard",
+      "topics": []
+    },
+    {
+      "tenant": "schema",
+      "namespace": "ingest",
+      "topics": [
+        "persistent://schema/ingest/function-logs",
+        "persistent://schema/ingest/onecall-clickstream-tracking-raw-v1",
+        "persistent://schema/ingest/onecall-clickstream-tracking-raw-v1-backfill",
+        "persistent://schema/ingest/onecall-clickstream-tracking-raw-v2"
+      ]
+    },
+    {
+      "tenant": "schema",
+      "namespace": "onecall-tracking",
+      "topics": [
+        "persistent://schema/onecall-tracking/legacy-filtered-ss-test",
+        "persistent://schema/onecall-tracking/onecall-catalog-augmented-v2",
+        "persistent://schema/onecall-tracking/onecall-clickstream-events-v2",
+        "persistent://schema/onecall-tracking/onecall-clickstream-tracking-transformed-v2",
+        "persistent://schema/onecall-tracking/onecall-clickstream-tracking-v1-to-v2-transformed",
+        "persistent://schema/onecall-tracking/onecall-data-validated-v2",
+        "persistent://schema/onecall-tracking/onecall-schema-validation-failed-v2",
+        "persistent://schema/onecall-tracking/transformed-legacy-ss-test",
+        "persistent://schema/onecall-tracking/transformed-test",
+        "persistent://schema/onecall-tracking/transformed-shoppingsite-clickstream-pageview-v1.0.0"
+      ]
+    },
+    {
+      "tenant": "schema",
+      "namespace": "processing",
+      "topics": [
+        "persistent://schema/processing/bigquery-legacy-ss-test-replay",
+        "persistent://schema/processing/bigquery-legacy-ss-test-retry",
+        "persistent://schema/processing/bigquery-log-entry-replay",
+        "persistent://schema/processing/bigquery-log-entry-retry",
+        "persistent://schema/processing/bigquery-onecall-clickstream-event-retry",
+        "persistent://schema/processing/bigquery-onecall-clickstream-replay",
+        "persistent://schema/processing/bigquery-shoppingsite-clickstream-completeorder-replay",
+        "persistent://schema/processing/bigquery-shoppingsite-clickstream-completeorder-retry",
+        "persistent://schema/processing/bigquery-shoppingsite-clickstream-useraction-replay",
+        "persistent://schema/processing/bigquery-shoppingsite-clickstream-useraction-retry",
+        "persistent://schema/processing/bigquery-site-test-info-replay",
+        "persistent://schema/processing/bigquery-site-test-info-retry",
+        "persistent://schema/processing/bigquery-temp-test-replay",
+        "persistent://schema/processing/bigquery-temp-test-retry",
+        "persistent://schema/processing/bigquery-temp-onecall-v2-event-log-replay",
+        "persistent://schema/processing/bigquery-temp-onecall-v2-event-log-retry",
+        "persistent://schema/processing/bigquery-temp-pageview-replay",
+        "persistent://schema/processing/bigquery-temp-pageview-retry"
+      ]
+    },
+    {
+      "tenant": "schema",
+      "namespace": "request-log-processing",
+      "topics": [
+        "persistent://schema/request-log-processing/request-log-kafka-backfill",
+        "persistent://schema/request-log-processing/request-log-kafka-partition-0",
+        "persistent://schema/request-log-processing/request-log-kafka-partition-1",
+        "persistent://schema/request-log-processing/request-log-kafka-partition-2"
+      ]
+    },
+    {
+      "tenant": "schema",
+      "namespace": "shoppingsite-requestlog-filtering",
+      "topics": [
+        "persistent://schema/shoppingsite-requestlog-filtering/shoppingsite-clickstream.pageview.v1.0.0"
+      ]
+    },
+    {
+      "tenant": "schema",
+      "namespace": "site-test",
+      "topics": []
+    },
+    {
+      "tenant": "schema",
+      "namespace": "site-testing",
+      "topics": [
+        "persistent://schema/site-testing/events-orderprocessed-filter-out-topic",
+        "persistent://schema/site-testing/events-useraction-filter-out-topic",
+        "persistent://schema/site-testing/filtered-non-siege",
+        "persistent://schema/site-testing/filtered-non-siege-utlws",
+        "persistent://schema/site-testing/filtered-sitetest-activations",
+        "persistent://schema/site-testing/log-entries",
+        "persistent://schema/site-testing/shoppingsite-clickstream.v1.completeorder",
+        "persistent://schema/site-testing/shoppingsite-clickstream.v1.useraction"
+      ]
+    }
+  ],
+  [
+    {
+      "tenant": "bigdata",
+      "namespace": "feeds",
+      "topics": [
+        "persistent://bigdata/feeds/schema_onecall-clickstream-events-v2"
+      ]
+    },
+    {
+      "tenant": "bigdata",
+      "namespace": "graveyard",
+      "topics": [
+        "persistent://bigdata/graveyard/bigdata-feeds-schema_onecall-clickstream-events-v2_onecall-v2-data-consumer",
+        "persistent://bigdata/graveyard/bigdata-feeds-schema_onecall-clickstream-events-v2_onecall-v2-data-consumer_DLQ",
+        "persistent://bigdata/graveyard/feeds-bigdata-schema_onecall-clickstream-tracking-raw-v2_onecall-v2-data-consumer_DLQ"
+      ]
+    }
+  ]
+]

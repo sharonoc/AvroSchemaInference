@@ -1,0 +1,10 @@
+{
+  "guid": "420e62e5-0271-4a73-9c49-2c89fe2193b7",
+  "costPerClick": 0.48,
+  "clickTime": true,
+  "userSeed": 582314,
+  "arrayOfArray": [
+    [1,2,3],
+    [4,5,6]
+  ]
+}

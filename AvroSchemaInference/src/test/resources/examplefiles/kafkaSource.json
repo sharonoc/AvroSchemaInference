@@ -1,0 +1,31 @@
+{
+  "tenant": "bigdata",
+  "namespace": "ingest",
+  "name": "kafka-first-pass-stream-sessionized",
+  "className": "org.apache.pulsar.io.kafka.KafkaBytesSource",
+  "topicName": "persistent://bigdata/ingest/first-pass-stream-sessionized",
+  "producerConfig": {
+    "useThreadLocalProducers": false,
+    "batchBuilder": ""
+  },
+  "configs": {
+    "consumerConfigProperties": {
+      "security.protocol": "SASL_PLAINTEXT",
+      "sasl.kerberos.service.name": "kafka",
+      "sasl.jaas.config": "com.sun.security.auth.module.Krb5LoginModule required doNotPrompt=true\nuseTicketCache=false serviceName=\"kafka\" principal=\"pulsar_runtime@HADOOP.TEST.OVERSTOCK.COM\"\nuseKeyTab=true keyTab=\"/pulsar/conf/auth/pulsar_runtime_test.keytab\" client=true;",
+      "auto.offset.reset": "latest"
+    },
+    "bootstrapServers": "kafka01.hadoop.test.ostk.com:9092,kafka02.hadoop.test.ostk.com:9092,kafka03.hadoop.test.ostk.com:9092,kafka04.hadoop.test.ostk.com:9092,kafka05.hadoop.test.ostk.com:9092",
+    "groupId": "pulsar-bigdata-ingest-kafka-first-pass-stream-sessionized-midgard",
+    "topic": "first-pass-stream-sessionized"
+  },
+  "parallelism": 1,
+  "processingGuarantees": "ATLEAST_ONCE",
+  "resources": {
+    "cpu": 1.0,
+    "ram": 1073741824,
+    "disk": 10737418240
+  },
+  "archive": "builtin://kafka",
+  "runtimeFlags": "-Djava.security.krb5.conf=/pulsar/conf/krb5-test.conf"
+}

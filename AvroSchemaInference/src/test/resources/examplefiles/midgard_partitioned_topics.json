@@ -1,0 +1,90 @@
+[
+  [
+    {
+      "tenant": "umf-portal",
+      "namespace": "emit",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "umf-portal",
+      "namespace": "events",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "umf-portal",
+      "namespace": "ingest",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "umf-portal",
+      "namespace": "requests",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "umf-portal",
+      "namespace": "responses",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "umf-portal",
+      "namespace": "test",
+      "partitioned_topics": []
+    }
+  ],
+  [
+    {
+      "tenant": "validation",
+      "namespace": "taps",
+      "partitioned_topics": []
+    }
+  ],
+  [
+    {
+      "tenant": "warehouse-inbound",
+      "namespace": "gateway-warehouse-ws",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "warehouse-inbound",
+      "namespace": "graveyard",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "warehouse-inbound",
+      "namespace": "ingest",
+      "partitioned_topics": []
+    }
+  ],
+  [
+    {
+      "tenant": "warehouse-outbound",
+      "namespace": "feeds",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "warehouse-outbound",
+      "namespace": "graveyard",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "warehouse-outbound",
+      "namespace": "hj-outbound-po-subscriber",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "warehouse-outbound",
+      "namespace": "hj-outbound-so-subscriber",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "warehouse-outbound",
+      "namespace": "ingest",
+      "partitioned_topics": []
+    },
+    {
+      "tenant": "warehouse-outbound",
+      "namespace": "processing",
+      "partitioned_topics": []
+    }
+  ]
+]

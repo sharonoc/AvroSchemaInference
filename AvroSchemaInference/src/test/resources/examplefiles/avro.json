@@ -1,0 +1,17 @@
+{
+  "folders": [{
+      "name": "schema",
+      "collections": [{
+          "name": "processing",
+          "schemata": [{
+              "name": "bigquery-temp-test-retry",
+              "type": "record",
+              "namespace": "com.sharon.schema.processing.bigquery-temp-test-retry",
+              "fields": [
+                {"name": "owner", "type": "string"},
+                {"name": "address", "type": "string"}
+              ]
+            }]
+        }]
+    }]
+}
